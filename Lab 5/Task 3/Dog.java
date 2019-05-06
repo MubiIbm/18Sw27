@@ -11,13 +11,23 @@ class Dog
 	}
 	public void showDetails()
 	{
+	
+	
+		if(age!=0 && name!=null && breed!=null)
+		{
 		System.out.println("***Dog Information***");
 		System.out.print("Name = "+name+"\nBreed Name = "+breed+"\nAge = "+age+" years");
+	}
+		else
+		{
+			System.out.print("Dog info is Incomplete.");
+		}
+	
 	}
 	public static void main(String args[])
 	{
 		Dog g=new Dog();
-		
+		System.out.println("Values:"+g.name+" "+g.age+" "+g.breed);
 		String d,e;
 		int f;
 		Scanner s=new Scanner(System.in);
